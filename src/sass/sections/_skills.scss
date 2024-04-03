@@ -1,0 +1,86 @@
+#skills {
+  padding: 60px 0;
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .skills-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 13px;
+  }
+
+  .skill {
+    margin-right: 20px; /* Increased gap between items horizontally */
+    margin-bottom: 20px; /* Increased gap between items vertically */
+    width: 70px;
+    height: 70px;
+    border: 2px solid #343a40;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    position: relative;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    i {
+      font-size: 35px;
+      color: #343a40; // Default color
+    }
+
+    span {
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    // Add individual hover effects for each skill
+    &:hover {
+      i.fa-html5 {
+        color: #e34c26; // HTML color
+      }
+      i.fa-css3-alt {
+        color: #1572b6; // CSS color
+      }
+      i.fa-js {
+        color: #f0db4f; // JavaScript color
+      }
+      i.fa-code {
+        color: #002fd7; // JavaScript color
+      }
+      i.fa-java {
+        color: #007396; // Java color
+      }
+      i.fa-python {
+        background: linear-gradient(-45deg, #fffb00, #0095ff); // Python gradient color
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      i.fa-database {
+        background: linear-gradient(45deg, #ff6600, #3399ff); // Database gradient color
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      i.fa-react {
+        color: #61dafb; // React.js color
+      }
+      i.fa-git {
+        color: #f1502f; // Git and Github color
+      }
+      i.fa-github {
+        color: #000000; // Git and Github color
+      }
+    }
+  }
+}
